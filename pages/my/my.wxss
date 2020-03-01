@@ -1,0 +1,25 @@
+/* pages/my/my.wxss */
+.userinfo{
+  /* width: 100%; */
+  background:#07bcb3;
+  padding: 40rpx 20rpx;
+  display: flex;
+  align-items: center;
+}
+.head_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.username{
+  color: #ffffff;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.go_login{
+  padding: 4rpx 24rpx;
+  color: #07bcb3;
+  font-size: 22rpx;
+  background: #ffffff;
+  border-radius: 4rpx;
+}

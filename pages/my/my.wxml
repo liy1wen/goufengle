@@ -1,0 +1,8 @@
+<view>
+  <!-- <contact-button></contact-button> -->
+  <view class="userinfo">
+    <image src="{{head_img}}" class="head_img"></image>
+    <text class="username">{{username}}</text>
+    <text class="go_login" wx:if="{{username == ''}}" bindtap="goLogin">请登录</text>
+  </view>
+</view>
