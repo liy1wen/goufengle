@@ -1,9 +1,17 @@
 /* pages/login/login.wxss */
 .login_content{
   text-align: center;
-  padding-top: 140rpx;
+  padding-top: 100rpx;
 }
 .tip{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30rpx;
+}
+.auth_info{
+  margin-top: 30rpx;
+  color: #A4A4A4;
   font-size: 28rpx;
 }
 .logo_img{
@@ -11,13 +19,13 @@
   height: 160rpx;
   margin-top: 100rpx;
 }
-.login_button{
+.login_content .login_button{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100rpx;
-  width: 470rpx;
-  background: #32A929;
+  margin-top: 80rpx;
+  width: 400rpx;
+  background: #C6B18B;
   color: #ffffff;
   text-align: center;
   height: 80rpx;

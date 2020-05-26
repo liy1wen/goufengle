@@ -1,47 +1,7 @@
 <view>
-    <swiper indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#07bcb3" autoplay="true" interval='2000' circular='true'>
+    <swiper indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#D0B17D" autoplay="true" interval='3000' circular='true'>
       <swiper-item wx:for="{{swiperList}}" wx:key="*this">
-        <image src="{{item.src}}" class="swiper_img"></image>
+        <image src="{{item}}" class="swiper_img"></image>
       </swiper-item>
     </swiper>
-
-    <view class="recommend bg_color">
-      <view class="recommend_item">
-        <view class="big_content">
-          <image src="../../assets/images/Children.jpg" mode="" class="big_img"></image>
-        </view>
-        <view class="small_content">
-          <image src="../../assets/images/Children1.jpg" mode="" class="small_img"></image>
-          <image src="../../assets/images/Children2.jpg" mode="" class="small_img"></image>
-          <image src="../../assets/images/Children3.jpg" mode="" class="small_img"></image>
-        </view>
-      </view>
-      <view class="recommend_item">
-        <view class="big_content">
-          <image src="../../assets/images/Furnishing.jpg" mode="" class="big_img"></image>
-        </view>
-        <view class="small_content">
-          <image src="../../assets/images/Furnishing1.jpg" mode="" class="small_img"></image>
-          <image src="../../assets/images/Furnishing2.jpg" mode="" class="small_img"></image>
-          <image src="../../assets/images/Furnishing3.jpg" mode="" class="small_img"></image>
-        </view>
-      </view>
-	  </view>
-
-    <view class="card_title">
-      <view class="title">- 猜你喜欢 -</view>
-    </view>
-
-    <view class="commodity">
-      <view class="commodity_item" wx:for="{{commodityList}}" wx:key="{{index}}" bindtap="goDetials">
-        <image src="{{item.imgSrc}}" mode="" class="commodity_img"></image>
-        <text class="commodity_describtion">{{item.des}}</text>
-        <view class="commodity_price">
-          <text class="new_price">{{item.newPrice}}</text>
-          <text class="old_price">{{item.oldPrice}}</text>
-        </view>
-        <text class="discount">3.8折</text>
-      </view>
-    </view>
-    <view class="bottom">- 我是有底线的 -</view>
 </view>

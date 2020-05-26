@@ -24,7 +24,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.2",
 	"appid": "wx112b8d803ef21aa6",
-	"projectname": "%E8%B4%AD%E7%96%AF%E4%BA%86",
+	"projectname": "goufengle",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -48,12 +48,30 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "测试登录页",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录页",
 					"pathName": "pages/login/login",
 					"scene": null
 				}

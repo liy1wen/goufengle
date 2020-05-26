@@ -1,10 +1,10 @@
 <!--pages/login/login.wxml-->
 <view class="login_content">
-  <text class="tip">使用微信账号快捷登陆购疯了</text>
   <view><image src="../../assets/images/logo.png" class="logo_img"></image></view>
-  <button open-type="getUserInfo" bindtap="bindGetUserInfo" class="login_button">
-    <!-- <i class="iconfont icon-weixin"></i> -->
+  <view class="tip">申请获取以下权限</view>
+  <view class="auth_info">获取你的公开信息（昵称、头像等）</view>
+  <button open-type="getUserInfo" bindtap="getUserInfo" class="login_button">
     <image src="../../assets/images/wechat.png" class="wechat"></image>
-    <text class="login_word">同意授权登陆</text>
+    <text class="login_word">同意授权</text>
   </button>
 </view>

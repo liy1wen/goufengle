@@ -1,36 +1,30 @@
 // pages/login/login.js
 let app = getApp()
-import utils from '../../utils/util.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app)
+    // console.log(app)
   },
-  bindGetUserInfo() {
+  getUserInfo() {
     // 获取用户信息
-    wx.getSetting({
+    // let that = this;
+    wx.getUserInfo({
       success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              app.globalData.userInfo = res.userInfo;
-              utils.loading('登陆成功')
-              utils.switchTab('../index/index')
-            }
-          })
-        }
+        console.log(res)
+        app.globalData.userInfo = res.userInfo;
+        wx.setStorageSync('userInfo', res.userInfo)
+        app.config.utils.loading('登陆成功')
+        app.config.utils.switchTab('../index/index')
       }
     })
   },

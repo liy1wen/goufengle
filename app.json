@@ -1,34 +1,48 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/serveStation/serveStation",
+    "pages/activity/activity",
     "pages/my/my",
     "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#07bcb3",
-    "navigationBarTitleText": "购疯了",
+    "navigationBarBackgroundColor": "#DCBC87",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#9b9b9b",
-    "selectedColor": "#07beb5",
+    "selectedColor": "#C6B18B",
     "backgroundColor": "#fbfbfb",
     "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "assets/images/shouye1.png",
-        "selectedIconPath": "assets/images/shouye2.png",
+        "iconPath": "assets/images/index.png",
+        "selectedIconPath": "assets/images/indexSelect.png",
         "text": "首页"
       },
       {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "assets/images/activity.png",
+        "selectedIconPath": "assets/images/activitySelect.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/serveStation/serveStation",
+        "iconPath": "assets/images/serveStation.png",
+        "selectedIconPath": "assets/images/serveStationSelect.png",
+        "text": "服务站"
+      },
+      {
         "pagePath": "pages/my/my",
-        "iconPath": "assets/images/my1.png",
-        "selectedIconPath": "assets/images/my2.png",
-        "text": "我的"
+        "iconPath": "assets/images/my.png",
+        "selectedIconPath": "assets/images/mySelect.png",
+        "text": "个人中心"
       }
     ]
   }

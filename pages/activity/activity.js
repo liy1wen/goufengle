@@ -1,14 +1,11 @@
-// pages/my/my.js
-let app = getApp()
+// pages/activity/activity.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    head_img:'',
-    isLogin: false,
-    username: '登录 / 注册'
+
   },
 
   /**
@@ -24,27 +21,12 @@ Page({
   onReady: function () {
 
   },
-  goLogin(){
-    app.config.utils.navigate('../login/login')
-    // wx.navigateTo({
-    //   url: '../login/login',
-    // })
-  },
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(wx.getStorageSync('userInfo').avatarUrl,'+++')
-    if (wx.getStorageSync('userInfo')) {
-      this.setData({
-        isLogin: true,
-        username: wx.getStorageSync('userInfo').nickName
-      })
-    }
-    // console.log(app.globalData.userInfo)
-    this.setData({
-      head_img: wx.getStorageSync('userInfo').avatarUrl || '../../assets/images/avatarUrl.png'
-    })
+
   },
 
   /**

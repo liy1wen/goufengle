@@ -8,13 +8,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: [{ src: "../../assets/images/swiper1.jpg" }, { src: "../../assets/images/swiper2.jpg" }, { src: "../../assets/images/swiper3.jpg" }],
-    commodityList: [{ des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity1.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
-    { des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity2.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
-    { des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity3.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
-    { des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity4.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
-    { des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity3.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
-    { des: '花花公子外套春秋男装2020新款韩版潮流工装上衣款韩版潮流工装上衣', imgSrc: '../../assets/images/commodity4.jpg', oldPrice: '￥698', newPrice: '￥269', discount: '3.8折' },
+    swiperList: [   'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/92409/39/13306/47742/5e54fc8dE179d82d5/2ea013718c8205f1.jpg!cr_1125x445_0_171!q70.jpg.dpg',
+'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/118830/27/8052/83693/5ec8f916E3149ed72/d46876b465d99210.jpg!cr_1125x445_0_171!q70.jpg.dpg',
+'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/121285/38/3130/150368/5eccf3d1E79062c03/28810b9793a5afc3.jpg!cr_1125x445_0_171!q70.jpg.dpg'
     ]
   },
 

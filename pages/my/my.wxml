@@ -2,7 +2,19 @@
   <!-- <contact-button></contact-button> -->
   <view class="userinfo">
     <image src="{{head_img}}" class="head_img"></image>
-    <text class="username">{{username}}</text>
-    <text class="go_login" wx:if="{{username == ''}}" bindtap="goLogin">请登录</text>
+    <view class="userinfo_right">
+      <view class="go_login" bindtap="goLogin">{{username}}</view>
+      <view class="tip_coupon" wx:if="{{!isLogin}}">注册即送优惠券</view>
+      <view class="validate" wx:if="{{isLogin}}">有效期至：2020-10-12</view>
+    </view>
+  </view>
+  <view class="my_appointment">
+    <view class="display">
+      <text class="title">我的预约</text>
+      <text class="look_more">查看更多</text>
+    </view>
+    <view class="display mt">
+      <view class="tobedone">待出行</view><text class="division">|</text><view class="finished">已完成</view>
+    </view>
   </view>
 </view>
