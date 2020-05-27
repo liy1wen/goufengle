@@ -23,8 +23,8 @@ Page({
         console.log(res)
         app.globalData.userInfo = res.userInfo;
         wx.setStorageSync('userInfo', res.userInfo)
-        app.config.utils.loading('登陆成功')
-        app.config.utils.switchTab('../index/index')
+        app.utils.loading('登陆成功')
+        app.utils.switchTab('../index/index')
       }
     })
   },

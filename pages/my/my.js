@@ -25,7 +25,7 @@ Page({
 
   },
   goLogin(){
-    app.config.utils.navigate('../login/login')
+    app.utils.navigate('../login/login')
     // wx.navigateTo({
     //   url: '../login/login',
     // })

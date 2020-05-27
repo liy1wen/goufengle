@@ -1,7 +1,56 @@
 swiper{
-  height: 400rpx;
+  height: 320rpx;
+  margin-top: 20rpx;
+  text-align: center;
 }
+/* .swiper_item{
+  width: 670rpx;
+  border-radius: 40rpx;
+} */
 .swiper_img{
-  height: 400rpx;
-  width: 100%;
+  height: 320rpx;
+  width: 670rpx;
+  border-radius: 30rpx;
 }
+
+.top_bar{
+  display: flex;
+  align-items: center;
+  background: #DCBC87;
+  color: #ffffff;
+  padding-bottom: 20rpx;
+  font-size: 28rpx;
+}
+.city,.right_icon{
+  text-align: center;
+}
+.right_icon {
+  width: 120rpx;
+}
+.right_icon .iconfont{
+  font-size: 44rpx;
+}
+.city{
+  padding: 0 20rpx;
+}
+van-search{
+  flex: 1;
+  background: #DCBC87 !important;
+  padding: 0;
+}
+.top_bar .van-search{
+  background: #DCBC87 !important;
+  padding: 0;
+}
+.top_bar .van-search .van-search__content{
+  border-radius: 60rpx;
+  height: 60rpx;
+}
+.top_bar .van-search .van-search__content .van-cell{
+  padding: 3px 10px 5px 0 !important;
+}
+.van-field__placeholder{
+  color: #9b9b9b !important;
+  font-size: 24rpx;
+}
+ 

@@ -1,0 +1,22 @@
+<!--pages/chooseCity/chooseCity.wxml-->
+<view>
+  <view class="top_bar">
+    <van-search value="{{city}}" placeholder="请输入搜索关键词" />
+  </view>
+  <view>
+    <view class="word_title">根据您的定位推荐</view>
+    <van-button icon="location-o" size="small" custom-style="border-radius:10rpx" plain class="city_button" color="#DCBC87">深圳</van-button>
+    <view class="word_title">热门城市</view>
+    <van-button wx:for="{{citys}}" wx:key="unique" size="small" custom-style="border-radius:10rpx" class="city_button">{{item}}</van-button>
+  </view>
+
+  <van-index-bar index-list="{{ indexList }}">
+    <view wx:for="{{ indexList }}" wx:key="unique" >
+      <van-index-anchor index="{{item}}">{{item}}</van-index-anchor>
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+      <van-cell title="文本" />
+    </view>
+  </van-index-bar>
+</view>
+

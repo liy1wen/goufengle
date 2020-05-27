@@ -1,0 +1,39 @@
+/* pages/chooseCity/chooseCity.wxss */
+.top_bar{
+  display: flex;
+  align-items: center;
+  background: #DCBC87;
+  color: #ffffff;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+van-search{
+  flex: 1;
+  background: #DCBC87 !important;
+  padding: 0;
+}
+.top_bar .van-search{
+  background: #DCBC87 !important;
+  padding: 0;
+}
+.top_bar .van-search .van-search__content{
+  border-radius: 60rpx;
+  height: 60rpx;
+}
+.top_bar .van-search .van-search__content .van-cell{
+  padding: 3px 10px 5px 0 !important;
+}
+.van-field__placeholder{
+  color: #9b9b9b !important;
+  font-size: 24rpx;
+}
+
+.word_title{
+  margin: 40rpx 0 0 26rpx;
+  color: #9b9b9b;
+  font-size: 24rpx;
+}
+.city_button{
+  display: inline-block;
+  margin: 30rpx 0 0 26rpx;
+}

@@ -4,7 +4,8 @@
     "pages/serveStation/serveStation",
     "pages/activity/activity",
     "pages/my/my",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/chooseCity/chooseCity"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +13,6 @@
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "white"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#9b9b9b",
@@ -45,5 +45,18 @@
         "text": "个人中心"
       }
     ]
+  },
+  "usingComponents": {
+    "van-search": "./dist/search/index",
+    "van-button": "./dist/button/index",
+    "van-index-bar": "./dist/index-bar/index",
+    "van-index-anchor": "./dist/index-anchor/index",
+    "van-cell": "./dist/cell/index",
+    "van-cell-group": "./dist/cell-group/index"
+  },
+  "permission": {
+    "scope.userLocation": { 
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

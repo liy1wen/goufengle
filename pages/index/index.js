@@ -1,26 +1,54 @@
 //index.js
 //获取应用实例
 const app = getApp();
-import utils from '../../utils/util.js'
+import Dialog from '../../dist/dialog/dialog';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    swiperList: [   'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/92409/39/13306/47742/5e54fc8dE179d82d5/2ea013718c8205f1.jpg!cr_1125x445_0_171!q70.jpg.dpg',
+    swiperList: ['https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/92409/39/13306/47742/5e54fc8dE179d82d5/2ea013718c8205f1.jpg!cr_1125x445_0_171!q70.jpg.dpg',
 'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/118830/27/8052/83693/5ec8f916E3149ed72/d46876b465d99210.jpg!cr_1125x445_0_171!q70.jpg.dpg',
 'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/121285/38/3130/150368/5eccf3d1E79062c03/28810b9793a5afc3.jpg!cr_1125x445_0_171!q70.jpg.dpg'
-    ]
+    ],
+    value: '',//搜索关键词
+    city: '',//所在城市
   },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getLocation()
   },
-
+  //获取用户位置（经纬度）
+  getLocation() {
+    let that = this;
+    wx.getLocation({
+      type: 'wgs84', //返回可以用于wx.openLocation的经纬度
+      success (res) {
+        that.getCity(res.latitude,res.longitude)
+      }
+     })
+  },
+  //获取所在城市
+  getCity(latitude,longitude) {
+    let that = this;
+    wx.request({
+      url: `https://restapi.amap.com/v3/geocode/regeo?key=${app.lbsKey}&location=${longitude},${latitude}`,
+      success (res) {
+        that.setData({
+          city: res.data.regeocode.addressComponent.city.replace('市','')
+        })
+      }
+    })
+  },
+  //跳转选择城市
+  chooseCity() {
+    app.utils.navigate('../chooseCity/chooseCity')
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -61,15 +89,6 @@ Page({
    */
   onReachBottom: function () {
 
-  },
-  goDetials:function(){
-    if (!app.globalData.userInfo){
-      utils.showModal('登录提醒', '您还未登陆，请先登录',()=>{
-        utils.navigate('../login/login')
-      })
-    }else{
-      utils.toast('hello world')
-    }
   },
   /**
    * 用户点击右上角分享
