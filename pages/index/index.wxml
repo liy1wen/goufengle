@@ -1,14 +1,29 @@
-<view>
+<view class="contain bgBody">
     <!-- 顶部搜索及地址 -->
-    <view class="top_bar">
-      <view class="city" bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i></view>
+    <view class="top_bar bgHead middleFont fff pb20">
+      <view class="city tc " bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i></view>
       <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
-      <view class="right_icon"><i class="iconfont icon-erji"></i></view>
+      <view class="right_icon tc"><i class="iconfont icon-erji"></i></view>
     </view>
     <!-- 轮播大图 -->
-    <swiper indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#D0B17D" autoplay="true" interval='3000' circular='true'>
-      <swiper-item wx:for="{{swiperList}}" wx:key="*this" class="swiper_item">
+    <swiper class="pt20 tc bgfff" indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#D0B17D" autoplay="true" interval='3000' circular='true'>
+      <swiper-item wx:for="{{swiperList}}" wx:key="this" class="swiper_item">
         <image src="{{item}}" class="swiper_img"></image>
       </swiper-item>
     </swiper>
+    <!-- 宫格 -->
+    <van-grid column-num="4" border="{{ false }}">
+      <van-grid-item use-slot wx:for="{{ gridList }}" wx:key="this">
+        <view>
+          <view class="icon_box bgHead"> 
+            <i class="iconfont {{item.icon}}"></i>
+          </view>
+          <text class="smallFont mt10 inlineBlock">{{item.title}}</text>
+        </view>
+      </van-grid-item>
+    </van-grid>
+    <!-- 大礼包 -->
+    <view class="mt20 gift tc bgfff bigFont">新人大礼包</view>
+    <!-- 鉴定步骤 -->
+    <view class="mt20 bgfff gift tc">鉴定步骤</view>
 </view>

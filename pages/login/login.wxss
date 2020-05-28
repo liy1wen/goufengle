@@ -1,18 +1,6 @@
 /* pages/login/login.wxss */
 .login_content{
-  text-align: center;
   padding-top: 100rpx;
-}
-.tip{
-  font-size: 32rpx;
-  font-weight: bold;
-  color: #333;
-  margin-top: 30rpx;
-}
-.auth_info{
-  margin-top: 30rpx;
-  color: #A4A4A4;
-  font-size: 28rpx;
 }
 .logo_img{
   width: 160rpx;
@@ -23,13 +11,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80rpx;
+  margin: 80rpx auto 0;
   width: 400rpx;
   background: #C6B18B;
-  color: #ffffff;
-  text-align: center;
   height: 80rpx;
-  /* line-height: 80rpx; */
   border-radius: 30rpx;
   font-size: 28rpx
 }

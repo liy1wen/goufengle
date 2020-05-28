@@ -1,19 +1,19 @@
 <view>
   <!-- <contact-button></contact-button> -->
-  <view class="userinfo">
+  <view class="userinfo bgHead">
     <image src="{{head_img}}" class="head_img"></image>
-    <view class="userinfo_right">
-      <view class="go_login" bindtap="goLogin">{{username}}</view>
-      <view class="tip_coupon" wx:if="{{!isLogin}}">注册即送优惠券</view>
-      <view class="validate" wx:if="{{isLogin}}">有效期至：2020-10-12</view>
+    <view class="userinfo_right fff">
+      <view class="go_login middleFont fff" bindtap="goLogin">{{username}}</view>
+      <view class="tip_coupon middleFont fff mt20" wx:if="{{!isLogin}}">注册即送优惠券</view>
+      <view class="validate mt20 smallFont fff" wx:if="{{isLogin}}">有效期至：2020-10-12</view>
     </view>
   </view>
-  <view class="my_appointment">
+  <view class="my_appointment bgfff">
     <view class="display">
-      <text class="title">我的预约</text>
+      <text class="fw bigFont ">我的预约</text>
       <text class="look_more">查看更多</text>
     </view>
-    <view class="display mt">
+    <view class="display mt30">
       <view class="tobedone">待出行</view><text class="division">|</text><view class="finished">已完成</view>
     </view>
   </view>

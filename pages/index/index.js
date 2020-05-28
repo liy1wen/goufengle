@@ -14,6 +14,7 @@ Page({
     ],
     value: '',//搜索关键词
     city: '',//所在城市
+    gridList: [{title:'奢品维修',icon: 'icon-weixiu'},{title:'奢品保养',icon: 'icon-baoyang'},{title:'奢品回收',icon: 'icon-huishou'},{title:'奢品清洗',icon: 'icon-qingxifuwu'}]
   },
 
 

@@ -1,0 +1,109 @@
+@import './reset.wxss';
+@import '/iconfont/iconfont.wxss';
+
+/* 页面背景色 */
+page {
+  background-color: #F5F5F5;
+} 
+/* 字体颜色 */
+.fw{
+  font-weight: bold;
+}
+.bigFont{
+  font-size: 32rpx;
+  color: #000000;
+}
+.middleFont{
+  color: #5A5A5A;
+  font-size: 28rpx;
+}
+.smallFont{
+  color: #A8A8A8;
+  font-size: 24rpx;
+}
+.fff{
+  color: #ffffff;
+}
+/* 背景颜色 */
+.bgHead{
+  background: #DCBC87;
+}
+.bgBody{
+  background: #F5F5F5; 
+}
+.bgfff{
+  background: #ffffff;
+}
+/* 公共样式 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.ml10{
+  margin-left: 10rpx;
+}
+.mt10{
+  margin-top: 10rpx;
+}
+.mb10{
+  margin-bottom: 10rpx;
+}
+.mr10{
+  margin-right: 10rpx;
+}
+.ml30{
+  margin-left: 30rpx;
+}
+.mt30{
+  margin-top: 30rpx;
+}
+.mb30{
+  margin-bottom: 30rpx;
+}
+.mr30{
+  margin-right: 30rpx;
+}
+.ml20{
+  margin-left: 20rpx;
+}
+.mt20{
+  margin-top: 20rpx;
+}
+.mb20{
+  margin-bottom: 20rpx;
+}
+.mr20{
+  margin-right: 20rpx;
+}
+.pl30{
+  padding-left: 30rpx;
+}
+.pt30{
+  padding-top: 30rpx;
+}
+.pb30{
+  padding-bottom: 30rpx;
+}
+.pr30{
+  padding-right: 30rpx;
+}
+.pl20{
+  padding-left: 20rpx;
+}
+.pt20{
+  padding-top: 20rpx;
+}
+.pb20{
+  padding-bottom: 20rpx;
+}
+.pr20{
+  padding-right: 20rpx;
+}
+.tc{
+  text-align: center;
+}
+.inlineBlock{
+  display: inline-block;
+}

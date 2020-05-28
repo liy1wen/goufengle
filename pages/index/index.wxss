@@ -1,28 +1,18 @@
+
+body{
+  background: red;
+}
 swiper{
   height: 320rpx;
-  margin-top: 20rpx;
-  text-align: center;
 }
-/* .swiper_item{
-  width: 670rpx;
-  border-radius: 40rpx;
-} */
 .swiper_img{
   height: 320rpx;
   width: 670rpx;
   border-radius: 30rpx;
 }
-
 .top_bar{
   display: flex;
   align-items: center;
-  background: #DCBC87;
-  color: #ffffff;
-  padding-bottom: 20rpx;
-  font-size: 28rpx;
-}
-.city,.right_icon{
-  text-align: center;
 }
 .right_icon {
   width: 120rpx;
@@ -54,3 +44,18 @@ van-search{
   font-size: 24rpx;
 }
  
+.icon_box{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_box .iconfont{
+  color: #ffffff;
+  font-size: 44rpx;
+}
+.gift{
+  line-height: 120rpx;
+}

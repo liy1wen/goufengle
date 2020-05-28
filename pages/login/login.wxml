@@ -1,9 +1,9 @@
 <!--pages/login/login.wxml-->
-<view class="login_content">
+<view class="login_content tc">
   <view><image src="../../assets/images/logo.png" class="logo_img"></image></view>
-  <view class="tip">申请获取以下权限</view>
-  <view class="auth_info">获取你的公开信息（昵称、头像等）</view>
-  <button open-type="getUserInfo" bindtap="getUserInfo" class="login_button">
+  <view class="fb bigFont mt30">申请获取以下权限</view>
+  <view class="mt30 middleFont">获取你的公开信息（昵称、头像等）</view>
+  <button open-type="getUserInfo" bindtap="getUserInfo" class="login_button tc fff">
     <image src="../../assets/images/wechat.png" class="wechat"></image>
     <text class="login_word">同意授权</text>
   </button>
