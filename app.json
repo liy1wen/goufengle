@@ -47,6 +47,8 @@
     ]
   },
   "usingComponents": {
+    "head-bar": "./components/headBar/headBar",
+    "main-button": "./components/mainButton/mainButton",
     "van-search": "./dist/search/index",
     "van-button": "./dist/button/index",
     "van-index-bar": "./dist/index-bar/index",
@@ -54,7 +56,10 @@
     "van-cell": "./dist/cell/index",
     "van-cell-group": "./dist/cell-group/index",
     "van-grid": "./dist/grid/index",
-    "van-grid-item": "./dist/grid-item/index"
+    "van-grid-item": "./dist/grid-item/index",
+    "van-card": "./dist/card/index",
+    "van-dropdown-menu": "./dist/dropdown-menu/index",
+    "van-dropdown-item": "./dist/dropdown-item/index"
   },
   "permission": {
     "scope.userLocation": { 

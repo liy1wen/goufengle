@@ -1,8 +1,10 @@
 <!--pages/chooseCity/chooseCity.wxml-->
 <view>
-  <view class="top_bar bgHead middleFont fff">
-    <van-search value="{{city}}" placeholder="请输入搜索关键词" />
-  </view>
+  <head-bar>
+    <view class="center_slot" slot="center">
+      <van-search value="{{value}}" placeholder="请输入搜索关键词" />
+    </view>
+  </head-bar>
   <view>
     <view class="word_title smallFont">根据您的定位推荐</view>
     <van-button icon="location-o" size="small" plain class="city_button inlineBlock" custom-style="border-radius:10rpx" color="#DCBC87">深圳</van-button>

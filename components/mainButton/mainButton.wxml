@@ -1,0 +1,2 @@
+<!--components/mainButton.wxml-->
+<view class="authenticate_btn"><van-button size="large" color="#DCBC87">{{text}}</van-button></view>

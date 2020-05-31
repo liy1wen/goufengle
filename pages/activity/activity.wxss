@@ -1,1 +1,28 @@
 /* pages/activity/activity.wxss */
+.right_icon {
+  width: 120rpx;
+}
+.right_icon .iconfont{
+  font-size: 44rpx;
+}
+.city{
+  padding: 0 20rpx;
+}
+.center_slot{
+  flex: 1;
+}
+.center_slot .van-search{
+  background: #DCBC87 !important;
+  padding: 0;
+}
+.center_slot .van-search .van-search__content{
+  border-radius: 60rpx;
+  height: 60rpx;
+}
+.center_slot .van-search .van-search__content .van-cell{
+  padding: 3px 10px 5px 0 !important;
+}
+.van-field__placeholder{
+  color: #9b9b9b !important;
+  font-size: 24rpx;
+}

@@ -1,11 +1,11 @@
 // toast提示
-const toast = function(title){
+const toast = title=>{
   wx.showToast({
     title: title
   })
 }
 //showModal确认框
-const showModal = function(title,content,callBack){
+const showModal = (title,content,callBack)=>{
   wx.showModal({
     title: title,
     content: content,
@@ -19,13 +19,18 @@ const showModal = function(title,content,callBack){
   })
 }
 //loading加载
-const loading = function (title){
+const showLoading =  title =>{
   wx.showLoading({
-    title: title
+    title: title,
+    mask: true
   })
 }
+//隐藏loading加载
+const hideLoading = () => {
+  wx.hideLoading()
+}
 // navigateTo页面路由跳转
-const navigate = function(url){
+const navigate = url=>{
   wx.navigateTo({
     url: url,
     success: function (res) { },
@@ -34,7 +39,7 @@ const navigate = function(url){
   })
 }
 // 跳转到tab页
-const switchTab = function (url){
+const switchTab =  url=>{
   wx.switchTab({
     url: url
   })
@@ -42,7 +47,8 @@ const switchTab = function (url){
 export default{
   toast,
   showModal,
-  loading,
+  showLoading,
   navigate,
-  switchTab
+  switchTab,
+  hideLoading
 }

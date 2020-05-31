@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp();
-import Dialog from '../../dist/dialog/dialog';
 Page({
 
   /**
@@ -14,7 +13,8 @@ Page({
     ],
     value: '',//搜索关键词
     city: '',//所在城市
-    gridList: [{title:'奢品维修',icon: 'icon-weixiu'},{title:'奢品保养',icon: 'icon-baoyang'},{title:'奢品回收',icon: 'icon-huishou'},{title:'奢品清洗',icon: 'icon-qingxifuwu'}]
+    gridList: [{title:'奢品维修',icon: 'icon-weixiu'},{title:'奢品保养',icon: 'icon-baoyang'},{title:'奢品回收',icon: 'icon-huishou'},{title:'奢品清洗',icon: 'icon-qingxifuwu'}],
+    stepGrid: [{title:'选择类别',icon: 'icon-classify-on'},{title:'拍摄细节',icon: 'icon-xiangji'},{title:'提交鉴定',icon: 'icon-jianding'}]
   },
 
 
@@ -23,6 +23,7 @@ Page({
    */
   onLoad: function (options) {
     this.getLocation()
+    this.getArticleTitle()
   },
   //获取用户位置（经纬度）
   getLocation() {
@@ -31,6 +32,7 @@ Page({
       type: 'wgs84', //返回可以用于wx.openLocation的经纬度
       success (res) {
         that.getCity(res.latitude,res.longitude)
+        that.getArticleTitle()
       }
      })
   },
@@ -49,6 +51,13 @@ Page({
   //跳转选择城市
   chooseCity() {
     app.utils.navigate('../chooseCity/chooseCity')
+  },
+  getArticleTitle() {
+    app.request('getArticleTitle').then(res=>{
+      console.log(res.data,'+++')
+    }).catch(err=>{
+      console.log(err)
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

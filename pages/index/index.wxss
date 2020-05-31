@@ -1,18 +1,10 @@
-
-body{
-  background: red;
-}
-swiper{
+.headSwiper{
   height: 320rpx;
 }
 .swiper_img{
   height: 320rpx;
   width: 670rpx;
   border-radius: 30rpx;
-}
-.top_bar{
-  display: flex;
-  align-items: center;
 }
 .right_icon {
   width: 120rpx;
@@ -23,20 +15,18 @@ swiper{
 .city{
   padding: 0 20rpx;
 }
-van-search{
+.center_slot{
   flex: 1;
+}
+.center_slot .van-search{
   background: #DCBC87 !important;
   padding: 0;
 }
-.top_bar .van-search{
-  background: #DCBC87 !important;
-  padding: 0;
-}
-.top_bar .van-search .van-search__content{
+.center_slot .van-search .van-search__content{
   border-radius: 60rpx;
   height: 60rpx;
 }
-.top_bar .van-search .van-search__content .van-cell{
+.center_slot .van-search .van-search__content .van-cell{
   padding: 3px 10px 5px 0 !important;
 }
 .van-field__placeholder{
@@ -58,4 +48,50 @@ van-search{
 }
 .gift{
   line-height: 120rpx;
+}
+.stepWord{
+  padding: 40rpx 0 10rpx;
+}
+.gridSwiper {
+  height: 220rpx;
+}
+.stepBg{
+  background: #F4F7FE;
+  width: 130rpx;
+  height: 130rpx;
+}
+.stepBg .iconfont{
+  color: #AEC6FA;
+  font-size: 50rpx;
+}
+.van-grid{
+  text-align: center;
+}
+.authenticate_contain{
+  padding: 0 30rpx 30rpx;
+}
+
+.serveStation{
+  padding: 0 30rpx 20rpx;
+}
+.stationTitle{
+  line-height: 100rpx;
+}
+.stationInfo{
+  border-top: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+}
+.stationInfo .van-card{
+  background: #ffffff;
+}
+.van-card__title{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.van-card__desc{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.col_icon{
+  color: #DCBC87;
 }

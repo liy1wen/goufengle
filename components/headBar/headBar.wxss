@@ -1,0 +1,8 @@
+/* components/search/search.wxss */
+.top_bar{
+  display: flex;
+  align-items: center;
+  background: #DCBC87;
+  color: #fff; 
+  padding: 20rpx;
+}

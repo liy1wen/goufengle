@@ -1,23 +1,16 @@
 /* pages/chooseCity/chooseCity.wxss */
-.top_bar{
-  display: flex;
-  align-items: center;
-  padding: 20rpx;
-}
-van-search{
+.center_slot{
   flex: 1;
+}
+.center_slot .van-search{
   background: #DCBC87 !important;
   padding: 0;
 }
-.top_bar .van-search{
-  background: #DCBC87 !important;
-  padding: 0;
-}
-.top_bar .van-search .van-search__content{
+.center_slot .van-search .van-search__content{
   border-radius: 60rpx;
   height: 60rpx;
 }
-.top_bar .van-search .van-search__content .van-cell{
+.center_slot .van-search .van-search__content .van-cell{
   padding: 3px 10px 5px 0 !important;
 }
 .van-field__placeholder{

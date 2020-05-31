@@ -1,2 +1,16 @@
 <!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view class="contain">
+    <!-- 顶部搜索及地址 -->
+    <head-bar>
+      <view slot="left" class="city tc" bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i>
+      </view>
+      <view class="center_slot" slot="center">
+        <van-search value="{{value}}" placeholder="请输入搜索关键词" />
+      </view>
+      <view slot="right" class="right_icon tc"><i class="iconfont icon-erji"></i></view>
+    </head-bar>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    </van-dropdown-menu>
+</view>

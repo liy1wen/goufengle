@@ -1,0 +1,8 @@
+/* components/mainButton.wxss */
+.authenticate_btn{
+  padding: 0 60rpx;
+}
+.authenticate_btn button{
+  border-radius: 60rpx;
+  height: 90rpx;
+}
