@@ -1,4 +1,4 @@
-/* pages/serveStation/serveStation.wxss */
+/* components/serveStation/serveStation.wxss */
 .serveStation{
   padding: 0 30rpx 20rpx;
 }
@@ -22,8 +22,4 @@
 }
 .col_icon{
   color: #DCBC87;
-}
-
-.contain .van-tabs{
-  margin-top: 20rpx;
 }

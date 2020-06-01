@@ -1,0 +1,33 @@
+/* components/activityCard/activityCard.wxss */
+.activity_item{
+  padding: 20rpx;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  position: relative;
+  font-size: 28rpx;
+}
+.status{
+  position: absolute;
+  color: #ffffff;
+  right: 20rpx;
+  top: 60rpx;
+  padding: 10rpx 30rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  background: #C8B48F;
+}
+.activity_img{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 36rpx;
+}
+.activity_describtion{
+  margin-top: 20rpx;
+}
+.start{
+  background: #17C6EE;
+}
+.finish{
+  background: #E6E5E5;
+}

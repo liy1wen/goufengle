@@ -1,0 +1,9 @@
+<!--components/activityCard/activityCard.wxml-->
+
+<view class="activity_item" wx:for="{{activityList}}" wx:key="*this">
+  <image src="{{item.src}}" class="activity_img"></image>
+  <view class="activity_describtion">{{item.des}}</view>
+  <view class="status" wx:if="{{item.status == 0}}">未开始</view>
+  <view class="status start" wx:elif="{{item.status == 1}}">进行中</view>
+  <view class="status finish" wx:else>已结束</view>
+</view>

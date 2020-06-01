@@ -1,2 +1,60 @@
 <!--pages/serveStation/serveStation.wxml-->
+  <view class="contain">
+    <view class="serveStation bgfff mt20 pb20">
+      <text class="bigFont fw stationTitle">最近服务站</text>
+      <view class="stationInfo pt20 pb20">
+        <van-card
+          num="2"
+          tag="最近" 
+          price="10.00"
+          desc="营业时间:10:00-22:00"
+          title="深圳龙华清湖旗舰店"
+          thumb="https://m.360buyimg.com/babel/s350x350_jfs/t1/118328/25/7484/100439/5ec3be0bE8a8aa3bc/80d0a174f2487122.jpg!q70.dpg"
+        >
+        </van-card>
+        <view class="mt10">
+          <i class="iconfont icon-weizhi"></i>
+          <text class="middleFont"> 龙华区民治街道科发路左侧100m</text>
+        </view>
+      </view>
+      <view class="mt10 mb30">
+        <i class="iconfont icon-zhuanshi col_icon"></i>
+        <text class="smallFont"> 回收 | 护理 | 维修 | 买手 | 置换</text>
+      </view>
+      <main-button text="立即预约"></main-button>
+    </view>
 
+    <van-tabs sticky swipeable color="#DCBC87" active="a" swipe-threshold="5">
+      <van-tab title="南山" name="a">
+        <view class="serveStation bgfff pb20" wx:for="{{2}}">
+          <text class="bigFont fw stationTitle">最近服务站</text>
+          <view class="stationInfo pt20 pb20">
+            <van-card
+              num="2"
+              tag="最近" 
+              price="10.00"
+              desc="营业时间:10:00-22:00"
+              title="深圳龙华清湖旗舰店"
+              thumb="https://m.360buyimg.com/babel/s350x350_jfs/t1/118328/25/7484/100439/5ec3be0bE8a8aa3bc/80d0a174f2487122.jpg!q70.dpg"
+            >
+            </van-card>
+            <view class="mt10">
+              <i class="iconfont icon-weizhi"></i>
+              <text class="middleFont"> 龙华区民治街道科发路左侧100m</text>
+            </view>
+          </view>
+          <view class="mt10 mb30">
+            <i class="iconfont icon-zhuanshi col_icon"></i>
+            <text class="smallFont"> 回收 | 护理 | 维修 | 买手 | 置换</text>
+          </view>
+          <main-button text="立即预约"></main-button>
+        </view>
+      </van-tab>
+      <van-tab title="福田" name="b">内容 2</van-tab>
+      <van-tab title="罗湖" name="c">内容 3</van-tab>
+      <van-tab title="宝安" name="d">内容 4</van-tab>
+      <van-tab title="龙华" name="e">内容 5</van-tab>
+      <van-tab title="龙岗" name="f">内容 6</van-tab>
+      <van-tab title="光明新区" name="g">内容 7</van-tab>
+    </van-tabs>
+  </view>
