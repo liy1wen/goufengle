@@ -25,7 +25,7 @@ Page({
 
   },
   goLogin(){
-    app.utils.navigate('../login/login')
+    app.nativeApi.navigate('../login/login')
     // wx.navigateTo({
     //   url: '../login/login',
     // })

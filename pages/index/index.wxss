@@ -7,13 +7,13 @@
   border-radius: 30rpx;
 }
 .right_icon {
-  width: 120rpx;
+  width: 100rpx;
 }
 .right_icon .iconfont{
   font-size: 44rpx;
 }
 .city{
-  padding: 0 20rpx;
+  padding: 0 10rpx;
 }
 .center_slot{
   flex: 1;

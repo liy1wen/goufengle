@@ -23,7 +23,7 @@ Page({
    */
   onLoad: function (options) {
     this.getLocation()
-    this.getArticleTitle()
+    // this.getArticleTitle()
   },
   //获取用户位置（经纬度）
   getLocation() {
@@ -32,7 +32,7 @@ Page({
       type: 'wgs84', //返回可以用于wx.openLocation的经纬度
       success (res) {
         that.getCity(res.latitude,res.longitude)
-        that.getArticleTitle()
+        // that.getArticleTitle()
       }
      })
   },
@@ -50,7 +50,7 @@ Page({
   },
   //跳转选择城市
   chooseCity() {
-    app.utils.navigate('../chooseCity/chooseCity')
+    app.nativeApi.navigate('../chooseCity/chooseCity')
   },
   getArticleTitle() {
     app.request('getArticleTitle').then(res=>{

@@ -1,5 +1,5 @@
 import baseUrl from './configUrl'
-import utils from '../utils/util'
+import nativeApi from '../utils/nativeApi.js'
 /*
   path:请求路径
   method：请求方法
@@ -8,11 +8,11 @@ import utils from '../utils/util'
 let num = 0;
 const closeLoading = ()=> {
   num --;
-  if(num == 0) utils.hideLoading()
+  if (num == 0) nativeApi.hideLoading()
 }
 export default function request(path,method,params){
   return new Promise((reslove,reject)=>{
-    if(num == 0) utils.showLoading('加载中') 
+    if (num == 0) nativeApi.showLoading('加载中') 
     num ++;
     wx.request({
       url: baseUrl + path,
