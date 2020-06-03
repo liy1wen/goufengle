@@ -47,6 +47,8 @@
     ]
   },
   "usingComponents": {
+    "activity-card": "./components/activityCard/activityCard",
+    "serve-station": "./components/serveStation/serveStation",
     "head-bar": "./components/headBar/headBar",
     "main-button": "./components/mainButton/mainButton",
     "van-search": "./dist/search/index",
@@ -59,7 +61,9 @@
     "van-grid-item": "./dist/grid-item/index",
     "van-card": "./dist/card/index",
     "van-dropdown-menu": "./dist/dropdown-menu/index",
-    "van-dropdown-item": "./dist/dropdown-item/index"
+    "van-dropdown-item": "./dist/dropdown-item/index",
+    "van-tab": "./dist/tab/index",
+    "van-tabs": "./dist/tabs/index"
   },
   "permission": {
     "scope.userLocation": { 

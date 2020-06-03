@@ -18,6 +18,7 @@ Page({
     ],
     value1: 0,
     value2: 'a',
+    activityList: [{src:'https://m.360buyimg.com/babel/s1171x462_jfs/t1/133024/23/751/113948/5ed0e419Ea568a792/4875eb4693c16c78.jpg!q50.jpg',des:'有关于色彩没学，让罗云熙告诉你',status:0},{src:'https://m.360buyimg.com/babel/s1171x462_jfs/t1/120333/22/3178/142968/5ece205cEe71c5ddc/17492270b6f3a831.jpg!q50.jpg',des:'如此温暖的"城市猎人"，是你最为完美的治愈系',status:1},{src:'https://m.360buyimg.com/babel/s1171x462_jfs/t1/125379/22/3219/105492/5ecf8a24E38dba47c/8cf608da8d09e431.jpg!q50.jpg',des:'有关于色彩没学，让罗云熙告诉你',status:2}]
   },
 
   /**

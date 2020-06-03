@@ -16,7 +16,7 @@
   padding: 0;
 }
 .center_slot .van-search .van-search__content{
-  border-radius: 60rpx;
+  border-radius: 40rpx;
   height: 60rpx;
 }
 .center_slot .van-search .van-search__content .van-cell{
@@ -25,4 +25,7 @@
 .van-field__placeholder{
   color: #9b9b9b !important;
   font-size: 24rpx;
+}
+.activity_list{
+  padding: 0 20rpx;
 }
