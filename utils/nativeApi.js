@@ -44,11 +44,16 @@ const switchTab = url => {
     url: url
   })
 }
+// 返回上一页
+const navigateBack = () => {
+  wx.navigateBack()
+}
 export default {
   toast,
   showModal,
   showLoading,
   navigate,
   switchTab,
-  hideLoading
+  hideLoading,
+  navigateBack
 }

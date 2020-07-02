@@ -23,7 +23,7 @@ Page({
         console.log(res)
         app.globalData.userInfo = res.userInfo;
         wx.setStorageSync('userInfo', res.userInfo)
-        app.nativeApi.loading('登陆成功')
+        app.nativeApi.showLoading('登陆成功')
         app.nativeApi.switchTab('../index/index')
       }
     })

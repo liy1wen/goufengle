@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp();
+const event = app.globalData.eventBus
 Page({
 
   /**
@@ -22,6 +23,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(event)
     this.getLocation()
     // this.getArticleTitle()
   },
@@ -42,9 +44,12 @@ Page({
     wx.request({
       url: `https://restapi.amap.com/v3/geocode/regeo?key=${app.lbsKey}&location=${longitude},${latitude}`,
       success (res) {
+        console.log(res)
         that.setData({
-          city: res.data.regeocode.addressComponent.city.replace('市','')
+          // city: res.data.regeocode.addressComponent.city.replace('市','')
+          city: res.data.regeocode.addressComponent.city.length == 0 ? res.data.regeocode.addressComponent.province :  res.data.regeocode.addressComponent.city.replace('市','')
         })
+        wx.setStorageSync('city', JSON.stringify(that.data.city))
       }
     })
   },
@@ -52,13 +57,13 @@ Page({
   chooseCity() {
     app.nativeApi.navigate('../chooseCity/chooseCity')
   },
-  getArticleTitle() {
-    app.request('getArticleTitle').then(res=>{
-      console.log(res.data,'+++')
-    }).catch(err=>{
-      console.log(err)
-    })
-  },
+  // getArticleTitle() {
+  //   app.request('getArticleTitle').then(res=>{
+  //     console.log(res.data,'+++')
+  //   }).catch(err=>{
+  //     console.log(err)
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -70,7 +75,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  // 接受事件订阅，获取选择城市
+    event.on('sendCityName',data => {
+      console.log(data)
+      this.setData({city: data})
+    })
   },
 
   /**

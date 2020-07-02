@@ -26,7 +26,7 @@
 
     <van-tabs sticky swipeable color="#DCBC87" active="a" swipe-threshold="5">
       <van-tab title="南山" name="a">
-        <view class="serveStation bgfff pb20" wx:for="{{2}}">
+        <view class="serveStation bgfff pb20" wx:for="{{2}}" wx:key="item">
           <text class="bigFont fw stationTitle">最近服务站</text>
           <view class="stationInfo pt20 pb20">
             <van-card

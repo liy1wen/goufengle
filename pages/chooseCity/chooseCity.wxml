@@ -2,22 +2,22 @@
 <view>
   <head-bar>
     <view class="center_slot" slot="center">
-      <van-search value="{{value}}" placeholder="请输入搜索关键词" />
+      <van-search value="{{searchCity}}" placeholder="请输入搜索关键词" />
     </view>
   </head-bar>
   <view>
     <view class="word_title smallFont">根据您的定位推荐</view>
-    <van-button icon="location-o" size="small" plain class="city_button inlineBlock" custom-style="border-radius:10rpx" color="#DCBC87">深圳</van-button>
+    <van-button icon="location-o" size="small" plain class="city_button inlineBlock" custom-style="border-radius:10rpx" color="#DCBC87" bindtap="chooseCity" data-city="{{city}}">{{city}}</van-button>
     <view class="word_title smallFont">热门城市</view>
-    <van-button wx:for="{{citys}}" wx:key="unique" size="small" custom-style="border-radius:10rpx" class="city_button inlineBlock">{{item}}</van-button>
+    <van-button wx:for="{{citys}}" wx:key="unique" size="small" custom-style="border-radius:10rpx" class="city_button inlineBlock" bindtap="chooseCity" data-city="{{item}}">{{item}}</van-button>
   </view>
 
   <van-index-bar index-list="{{ indexList }}">
     <view wx:for="{{ indexList }}" wx:key="unique" >
       <van-index-anchor index="{{item}}">{{item}}</van-index-anchor>
-      <van-cell title="文本" />
-      <van-cell title="文本" />
-      <van-cell title="文本" />
+      <block wx:for="{{cityList}}" wx:key="item">
+        <van-cell title="{{item}}" bindtap="chooseCity" data-city="{{item}}"/>
+      </block>
     </view>
   </van-index-bar>
 </view>
