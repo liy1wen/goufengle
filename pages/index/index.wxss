@@ -7,13 +7,7 @@
   border-radius: 30rpx;
 }
 .right_icon {
-  width: 100rpx;
-}
-.right_icon .iconfont{
-  font-size: 44rpx;
-}
-.city{
-  padding: 0 10rpx;
+  width: 60rpx;
 }
 .center_slot{
   flex: 1;
@@ -33,24 +27,24 @@
   color: #9b9b9b !important;
   font-size: 24rpx;
 }
- 
 .icon_box{
   width: 90rpx;
   height: 90rpx;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .icon_box .iconfont{
   color: #ffffff;
   font-size: 44rpx;
 }
 .gift{
-  line-height: 120rpx;
+  height: 120rpx;
 }
-.stepWord{
-  padding: 40rpx 0 10rpx;
+.gift view {
+  height: 100%;
+}
+.gift view image {
+  height: 100%;
+  width: 100%;
+  border-radius: 80rpx;
 }
 .gridSwiper {
   height: 220rpx;
@@ -67,19 +61,8 @@
 .van-grid{
   text-align: center;
 }
-.authenticate_contain{
-  padding: 0 30rpx 30rpx;
-}
-
-.serveStation{
-  padding: 0 30rpx 20rpx;
-}
 .stationTitle{
   line-height: 100rpx;
-}
-.stationInfo{
-  border-top: 1px solid #F5F5F5;
-  border-bottom: 1px solid #F5F5F5;
 }
 .stationInfo .van-card{
   background: #ffffff;

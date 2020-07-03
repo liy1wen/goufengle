@@ -5,11 +5,11 @@
       <van-search value="{{searchCity}}" placeholder="请输入搜索关键词" />
     </view>
   </head-bar>
-  <view>
-    <view class="word_title smallFont">根据您的定位推荐</view>
-    <van-button icon="location-o" size="small" plain class="city_button inlineBlock" custom-style="border-radius:10rpx" color="#DCBC87" bindtap="chooseCity" data-city="{{city}}">{{city}}</van-button>
-    <view class="word_title smallFont">热门城市</view>
-    <van-button wx:for="{{citys}}" wx:key="unique" size="small" custom-style="border-radius:10rpx" class="city_button inlineBlock" bindtap="chooseCity" data-city="{{item}}">{{item}}</van-button>
+  <view class="bg-white px-3">
+    <view class="pt-4 mb-3 display-5 text-gray">根据您的定位推荐</view>
+    <van-button icon="location-o" size="small" plain class="d-inline-block" custom-style="border-radius:10rpx" color="#DCBC87" bindtap="chooseCity" data-city="{{city}}">{{city}}</van-button>
+    <view class="pt-4 mb-3 display-5 text-gray">热门城市</view>
+    <van-button wx:for="{{citys}}" wx:key="unique" size="small" custom-style="border-radius:10rpx" class="d-inline-block mb-2 ml-1 text-black font-weight-semi-bold" bindtap="chooseCity" data-city="{{item}}">{{item}}</van-button>
   </view>
 
   <van-index-bar index-list="{{ indexList }}">

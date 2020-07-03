@@ -8,7 +8,8 @@ Page({
   data: {
     head_img:'',
     isLogin: false,
-    username: '登录 / 注册'
+    username: '登录 / 注册',
+    stepGrid: [{title:'待鉴定',icon: 'clock-o',color: '#FDB537'},{title:'鉴定中',icon: 'ellipsis',color: '#15C5F2'},{title:'已鉴定',icon: 'certificate',color: '#B6E886'}]
   },
 
   /**

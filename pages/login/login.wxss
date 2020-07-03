@@ -8,20 +8,12 @@
   margin-top: 100rpx;
 }
 .login_content .login_button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 80rpx auto 0;
+  margin: 60rpx auto 0;
   width: 400rpx;
-  background: #C6B18B;
   height: 80rpx;
-  border-radius: 30rpx;
-  font-size: 28rpx
+  border-radius: 40rpx;
 }
 .wechat{
   width: 36rpx;
   height: 36rpx;
-}
-.login_word{
-  margin-left: 10rpx;
 }

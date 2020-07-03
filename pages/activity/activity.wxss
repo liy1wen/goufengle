@@ -1,12 +1,6 @@
 /* pages/activity/activity.wxss */
 .right_icon {
-  width: 120rpx;
-}
-.right_icon .iconfont{
-  font-size: 44rpx;
-}
-.city{
-  padding: 0 20rpx;
+  width: 60rpx;
 }
 .center_slot{
   flex: 1;
@@ -25,7 +19,4 @@
 .van-field__placeholder{
   color: #9b9b9b !important;
   font-size: 24rpx;
-}
-.activity_list{
-  padding: 0 20rpx;
 }

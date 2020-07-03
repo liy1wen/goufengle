@@ -1,10 +1,10 @@
 <!--pages/login/login.wxml-->
-<view class="login_content tc">
-  <view><image src="../../assets/images/logo.png" class="logo_img"></image></view>
-  <view class="fb bigFont mt30">申请获取以下权限</view>
-  <view class="mt30 middleFont">获取你的公开信息（昵称、头像等）</view>
-  <button open-type="getUserInfo" bindtap="getUserInfo" class="login_button tc fff">
-    <image src="../../assets/images/wechat.png" class="wechat"></image>
-    <text class="login_word">同意授权</text>
+<view class="login_content text-center">
+  <view><image src="/assets/images/logo.png" class="logo_img border-circle"></image></view>
+  <view class="font-weight-bold display-3 mt-3 text-black">申请获取以下权限</view>
+  <view class="mt-3 display-4 text-gray">获取你的公开信息（昵称、头像等）</view>
+  <button open-type="getUserInfo" bindtap="getUserInfo" class="login_button text-center text-white d-flex justify-content-center align-items-center bg-btn display-4">
+    <image src="/assets/images/wechat.png" class="wechat"></image>
+    <text class="ml-1 display-4 border-0 font-weight-bold">同意授权</text>
   </button>
 </view>

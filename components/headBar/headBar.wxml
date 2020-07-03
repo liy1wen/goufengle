@@ -1,5 +1,5 @@
 <!--components/search/search.wxml-->
-<view class="top_bar middleFont pb20">
+<view class="top_bar">
   <slot name="left"></slot>
   <slot name="center"></slot>
   <slot name="right"></slot>

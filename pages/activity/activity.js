@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    city: '深圳',
+    city: '',
     option1: [
       { text: '全部商品', value: 0 },
       { text: '新款商品', value: 1 },
@@ -25,7 +25,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({ city: JSON.parse(wx.getStorageSync('city')) })
   },
 
   /**

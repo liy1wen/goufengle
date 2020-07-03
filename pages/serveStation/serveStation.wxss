@@ -1,13 +1,6 @@
 /* pages/serveStation/serveStation.wxss */
-.serveStation{
-  padding: 0 30rpx 20rpx;
-}
 .stationTitle{
   line-height: 100rpx;
-}
-.stationInfo{
-  border-top: 1px solid #F5F5F5;
-  border-bottom: 1px solid #F5F5F5;
 }
 .stationInfo .van-card{
   background: #ffffff;
@@ -23,7 +16,6 @@
 .col_icon{
   color: #DCBC87;
 }
-
 .contain .van-tabs{
   margin-top: 20rpx;
 }

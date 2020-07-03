@@ -23,7 +23,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(event)
     this.getLocation()
     // this.getArticleTitle()
   },
@@ -44,7 +43,7 @@ Page({
     wx.request({
       url: `https://restapi.amap.com/v3/geocode/regeo?key=${app.lbsKey}&location=${longitude},${latitude}`,
       success (res) {
-        console.log(res)
+        // console.log(res)
         that.setData({
           // city: res.data.regeocode.addressComponent.city.replace('市','')
           city: res.data.regeocode.addressComponent.city.length == 0 ? res.data.regeocode.addressComponent.province :  res.data.regeocode.addressComponent.city.replace('市','')
@@ -56,6 +55,12 @@ Page({
   //跳转选择城市
   chooseCity() {
     app.nativeApi.navigate('../chooseCity/chooseCity')
+  },
+  //获取新手礼包
+  getNewcomerPackage() {
+    app.nativeApi.showModal('','新手礼包',()=> {
+      app.nativeApi.toast('领取成功')
+    })
   },
   // getArticleTitle() {
   //   app.request('getArticleTitle').then(res=>{
@@ -77,7 +82,7 @@ Page({
   onShow: function () {
   // 接受事件订阅，获取选择城市
     event.on('sendCityName',data => {
-      console.log(data)
+      // console.log(data)
       this.setData({city: data})
     })
   },

@@ -1,8 +1,8 @@
 <!--pages/serveStation/serveStation.wxml-->
   <view class="contain">
-    <view class="serveStation bgfff mt20 pb20">
-      <text class="bigFont fw stationTitle">最近服务站</text>
-      <view class="stationInfo pt20 pb20">
+    <view class="bg-white mt-2 pb-3 pl-3">
+      <text class="display-3 font-weight-bold stationTitle">最近服务站</text>
+      <view class="border-top border-bottom pt-2 pb-2">
         <van-card
           num="2"
           tag="最近" 
@@ -12,23 +12,22 @@
           thumb="https://m.360buyimg.com/babel/s350x350_jfs/t1/118328/25/7484/100439/5ec3be0bE8a8aa3bc/80d0a174f2487122.jpg!q70.dpg"
         >
         </van-card>
-        <view class="mt10">
+        <view class="mt-1">
           <i class="iconfont icon-weizhi"></i>
-          <text class="middleFont"> 龙华区民治街道科发路左侧100m</text>
+          <text class="display-5 text-gray"> 龙华区民治街道科发路左侧100m</text>
         </view>
       </view>
-      <view class="mt10 mb30">
+      <view class="mt-1 mb-5">
         <i class="iconfont icon-zhuanshi col_icon"></i>
-        <text class="smallFont"> 回收 | 护理 | 维修 | 买手 | 置换</text>
+        <text class="display-5 text-gray"> 回收 | 护理 | 维修 | 买手 | 置换</text>
       </view>
       <main-button text="立即预约"></main-button>
     </view>
 
     <van-tabs sticky swipeable color="#DCBC87" active="a" swipe-threshold="5">
       <van-tab title="南山" name="a">
-        <view class="serveStation bgfff pb20" wx:for="{{2}}" wx:key="item">
-          <text class="bigFont fw stationTitle">最近服务站</text>
-          <view class="stationInfo pt20 pb20">
+        <view class="px-30 pb-2 bg-white pl-3" wx:for="{{2}}" wx:key="item">
+          <view class="border-top border-bottom pt-2 pb-2">
             <van-card
               num="2"
               tag="最近" 
@@ -38,16 +37,15 @@
               thumb="https://m.360buyimg.com/babel/s350x350_jfs/t1/118328/25/7484/100439/5ec3be0bE8a8aa3bc/80d0a174f2487122.jpg!q70.dpg"
             >
             </van-card>
-            <view class="mt10">
+            <view class="mt-1">
               <i class="iconfont icon-weizhi"></i>
-              <text class="middleFont"> 龙华区民治街道科发路左侧100m</text>
+              <text class="display-5 text-gray"> 龙华区民治街道科发路左侧100m</text>
             </view>
           </view>
-          <view class="mt10 mb30">
+          <view class="mt-1">
             <i class="iconfont icon-zhuanshi col_icon"></i>
-            <text class="smallFont"> 回收 | 护理 | 维修 | 买手 | 置换</text>
+            <text class="display-5 text-gray"> 回收 | 护理 | 维修 | 买手 | 置换</text>
           </view>
-          <main-button text="立即预约"></main-button>
         </view>
       </van-tab>
       <van-tab title="福田" name="b">内容 2</van-tab>

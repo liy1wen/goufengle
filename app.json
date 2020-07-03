@@ -63,7 +63,8 @@
     "van-dropdown-menu": "./dist/dropdown-menu/index",
     "van-dropdown-item": "./dist/dropdown-item/index",
     "van-tab": "./dist/tab/index",
-    "van-tabs": "./dist/tabs/index"
+    "van-tabs": "./dist/tabs/index",
+    "van-icon": "./dist/icon/index"
   },
   "permission": {
     "scope.userLocation": { 

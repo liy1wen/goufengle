@@ -1,57 +1,61 @@
 <view class="contain bgBody">
     <!-- 顶部搜索及地址 -->
     <head-bar>
-      <view slot="left" class="city tc" bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i>
+      <view slot="left" class="px-1" bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i>
       </view>
       <view class="center_slot" slot="center">
         <van-search value="{{value}}" placeholder="请输入搜索关键词" />
       </view>
-      <view slot="right" class="right_icon tc"><i class="iconfont icon-erji"></i></view>
+      <view slot="right" class="right_icon ml-2"><i class="iconfont icon-erji display-1"></i></view>
     </head-bar>
     <!-- 轮播大图 -->
-    <swiper class="pt20 tc bgfff headSwiper" autoplay="true" interval='3000' circular='true'>
+    <swiper class="pt-2 bg-white headSwiper" autoplay="true" interval='3000' circular='true'>
       <swiper-item wx:for="{{swiperList}}" wx:key="this" class="swiper_item">
-        <image src="{{item}}" class="swiper_img"></image>
+        <image src="{{item}}" class="swiper_img ml-4"></image>
       </swiper-item>
     </swiper>
     <!-- 宫格 -->
-    <swiper class="gridSwiper bgfff" indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#D0B17D">
+    <swiper class="gridSwiper bg-white" indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#D0B17D">
       <swiper-item wx:for="{{2}}" wx:key="this">
         <van-grid column-num="4" border="{{ false }}">
           <van-grid-item use-slot wx:for="{{ gridList }}" wx:key="this">
             <view>
-              <view class="icon_box bgHead"> 
+              <view class="icon_box bg-btn d-flex justify-content-center align-items-center border-circle"> 
                 <i class="iconfont {{item.icon}}"></i>
               </view>
-              <text class="smallFont mt10 inlineBlock">{{item.title}}</text>
+              <text class="display-5 mt-2 d-inline-block text-gray">{{item.title}}</text>
             </view>
           </van-grid-item>
         </van-grid>
       </swiper-item>
     </swiper>
     <!-- 大礼包 -->
-    <view class="mt20 gift tc bgfff bigFont">新人大礼包</view>
+    <view class="mt-2 gift bg-white px-3 py-2">
+        <view bindtap="getNewcomerPackage">
+         <image src="/assets/images/xinrenlibao.jpg"></image>
+        </view>   
+    </view>
     <!-- 鉴定步骤 -->
-    <view class="authenticate_contain bgfff">
-      <view class="mt20 tc stepWord">
-        <view class="bigFont fw">AI鉴定 多种品类 快速精准</view>
+    <view class="bg-white pb-4">
+      <view class="mt-2 text-center pt-4 pb-1">
+        <view class="display-2 font-weight-semi-bold">AI鉴定 多种品类 快速精准</view>
       </view>
       <van-grid column-num="3" border="{{ false }}">
         <van-grid-item use-slot wx:for="{{ stepGrid }}" wx:key="this">
           <view>
-            <view class="icon_box stepBg"> 
+            <view class="stepBg border-circle d-flex align-items-center justify-content-center"> 
               <i class="iconfont {{item.icon}}"></i>
             </view>
-            <text class="middleFont mt20 inlineBlock">{{item.title}}</text>
+            <text class="display-4 mt-2 d-inline-block text-dark">{{item.title}}</text>
           </view>
         </van-grid-item>
       </van-grid> 
       <main-button text="立即AI鉴定"></main-button>
     </view>
     <!-- 最近服务站 -->
-    <view class="serveStation bgfff mt20 pb20">
-      <text class="bigFont fw stationTitle">最近服务站</text>
-      <view class="stationInfo pt20 pb20">
+    <view class="bg-white mt-2 pb-4 px-3">
+      <text class="display-2 font-weight-semi-bold stationTitle">最近服务站</text>
+      <view class="border-top border-bottom pt-2 pb-2">
         <van-card
           num="2"
           tag="最近" 
@@ -61,14 +65,14 @@
           thumb="https://m.360buyimg.com/babel/s350x350_jfs/t1/118328/25/7484/100439/5ec3be0bE8a8aa3bc/80d0a174f2487122.jpg!q70.dpg"
         >
         </van-card>
-        <view class="mt10">
+        <view class="mt-1">
           <i class="iconfont icon-weizhi"></i>
-          <text class="middleFont"> 龙华区民治街道科发路左侧100m</text>
+          <text class="display-5 text-gray"> 龙华区民治街道科发路左侧100m</text>
         </view>
       </view>
-      <view class="mt10 mb30">
+      <view class="mt-1 mb-5">
         <i class="iconfont icon-zhuanshi col_icon"></i>
-        <text class="smallFont"> 回收 | 护理 | 维修 | 买手 | 置换</text>
+        <text class="display-5 text-gray"> 回收 | 护理 | 维修 | 买手 | 置换</text>
       </view>
       <main-button text="立即预约"></main-button>
     </view>

@@ -1,16 +1,10 @@
 /* pages/my/my.wxss */
 .userinfo{
   height: 220rpx;
-  padding: 40rpx 30rpx;
-  display: flex;
 }
 .head_img{
   width: 120rpx;
   height: 120rpx;
-  border-radius: 50%;
-}
-.userinfo_right{
-  padding: 10rpx 30rpx;
 }
 .tip_coupon{
   background: #FF4B5A;
@@ -19,28 +13,29 @@
   border-radius: 20rpx;
 }
 .my_appointment{
-  margin: 0 30rpx;
-  border-radius: 30rpx;
-  position: relative;
-  bottom: 100rpx;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 30rpx;
+  border-radius: 20rpx;
+  margin-top: -100rpx;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.display{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.look_more{
-  font-size: 26rpx;
-  color: #A8A8A8;
-}
-.tobedone,.finished{
+.tobedone{
   flex: 1;
-  text-align: center;
-  color: #5A5A5A;
-  font-size: 30rpx;
 }
 .division{
   color: #E6E6E6;
+}
+.icon_box{
+  width: 90rpx;
+  height: 90rpx;
+}
+.van-grid{
+  text-align: center;
+}
+.van-cell__title {
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  color: #666666;
+}
+.van-cell__left-icon-wrap {
+  color: #E4C88D;
+  font-size: 40rpx !important;
 }

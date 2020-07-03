@@ -21,7 +21,7 @@ Page({
     this.setData({ city: JSON.parse(wx.getStorageSync('city')) })
   },
   chooseCity(e) {
-    console.log(e.currentTarget.dataset.city)
+    // console.log(e.currentTarget.dataset.city)
     event.emit('sendCityName',e.currentTarget.dataset.city)
     app.nativeApi.navigateBack()
   },

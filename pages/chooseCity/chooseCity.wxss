@@ -17,11 +17,3 @@
   color: #9b9b9b !important;
   font-size: 24rpx;
 }
-
-.word_title{
-  margin: 40rpx 0 0 26rpx;
-}
-.city_button{
-  margin: 30rpx 0 0 26rpx;
-  /* display: inline-block; */
-}
