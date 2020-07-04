@@ -45,10 +45,9 @@ Page({
       success (res) {
         // console.log(res)
         that.setData({
-          // city: res.data.regeocode.addressComponent.city.replace('市','')
           city: res.data.regeocode.addressComponent.city.length == 0 ? res.data.regeocode.addressComponent.province :  res.data.regeocode.addressComponent.city.replace('市','')
         })
-        wx.setStorageSync('city', JSON.stringify(that.data.city))
+        wx.setStorageSync('city', that.data.city)
       }
     })
   },

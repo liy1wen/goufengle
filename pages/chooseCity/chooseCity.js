@@ -18,10 +18,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ city: JSON.parse(wx.getStorageSync('city')) })
+    this.setData({ city: wx.getStorageSync('city') })
   },
   chooseCity(e) {
     // console.log(e.currentTarget.dataset.city)
+    wx.setStorageSync('city', e.currentTarget.dataset.city)
     event.emit('sendCityName',e.currentTarget.dataset.city)
     app.nativeApi.navigateBack()
   },

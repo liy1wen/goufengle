@@ -1,4 +1,4 @@
-<view class="contain bgBody">
+<view>
     <!-- 顶部搜索及地址 -->
     <head-bar>
       <view slot="left" class="px-1" bindtap="chooseCity">{{city}} <i class="iconfont icon-xiangxia"></i>

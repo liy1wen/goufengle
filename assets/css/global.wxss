@@ -2,7 +2,7 @@
 @import '/iconfont/iconfont.wxss';
 
 /* 全局页面背景色 */
-page {background-color: #F5F5F5 !important;margin-bottom: 20rpx !important;} 
+page {background-color: #F5F5F5 !important;padding-bottom: 20rpx !important;} 
 /* 背景颜色 */
 .bg-white {background: #ffffff !important;}
 .bg-black {background-color: #000000 !important;}
