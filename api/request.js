@@ -5,12 +5,17 @@ import nativeApi from '../utils/nativeApi.js'
   method：请求方法
   params：请求参数
 */
+let header;
 let num = 0;
 const closeLoading = ()=> {
   num --;
   if (num == 0) nativeApi.hideLoading()
 }
 export default function request(path,method,params){
+ 
+  if(method.toUpperCase() == "POST") {
+    header["content-type"] = "application/x-www-form-urlencoded"
+  }
   return new Promise((reslove,reject)=>{
     if (num == 0) nativeApi.showLoading('加载中') 
     num ++;
@@ -19,11 +24,11 @@ export default function request(path,method,params){
       method: method || 'get',
       data: params || {},
       header: {
-        'content-type': 'application/json',
-        'Authorization': 'Bearer ' + wx.getStorageSync('token')
+        'Authorization': 'Bearer ' + wx.getStorageSync('token'),
+        ...header
       },
       success (res) {
-        reslove(res)
+        reslove(res.data)
         closeLoading()
       },
       fail(err){
